@@ -1,0 +1,76 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/login_top_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_gradient"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/congratulate_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Поздравляем вас с прибылью!"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_largest"
+
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/credit_formula_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_2x"
+                android:gravity="center_horizontal"
+                android:text="Ваш чистый доход после закрытия криптовалютной кредитной позиции на Nimfamoney составил"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/profit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="@dimen/text_size_largest2" />
+            <Button
+                android:id="@+id/begin_trade_button"
+                style="@style/custom_button"
+                android:text="@string/pay_out" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

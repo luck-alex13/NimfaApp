@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="curr"
+            type="com.nimfa.nimfaapp.dataModels.Currency" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/curr_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/curr_img_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/curr_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/curr_img_view"
+            android:layout_toRightOf="@+id/curr_img_view"
+            android:text="@{curr.name}"
+            android:textColor="@color/primaryTextBlack"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/curr_cost_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curr_name_view"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:layout_toEndOf="@+id/curr_img_view"
+            android:layout_toRightOf="@+id/curr_img_view"
+            android:text="@{String.format(@string/dollar_s,String.valueOf(curr.cost))}"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageButton
+            android:id="@+id/card_popup"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_info_outline_black_24dp" />
+
+        <Button
+            android:id="@+id/bye_currency"
+            style="@style/custom_button"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/card_popup"
+            android:text="@string/action_bye" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/bye_currency"
+            android:background="@color/dividerLightGrey" />
+    </RelativeLayout>
+</layout>

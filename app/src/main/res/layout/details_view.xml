@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="curr"
+            type="com.nimfa.nimfaapp.dataModels.Currency" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_content_view"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+</layout>

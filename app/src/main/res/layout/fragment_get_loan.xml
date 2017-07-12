@@ -1,0 +1,133 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/login_top_layer"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/blue_gradient"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_2x"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 NIMFA = $5"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" по курсу на 01.09.2017"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_medium_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ваш баланс: "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_medium_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10000 NIMFA"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Доступный вам заем: "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_medium_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30000 NIMFA"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin_2x"
+            android:paddingRight="@dimen/activity_horizontal_margin_2x">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:focusableInTouchMode="true"
+                android:text="Введите желаемую сумму займа:"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="@dimen/text_size_medium_large" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/loan_amount_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_summ_loan"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/get_loan_button"
+                style="@style/custom_button"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_2x"
+                android:text="@string/action_get_loan" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

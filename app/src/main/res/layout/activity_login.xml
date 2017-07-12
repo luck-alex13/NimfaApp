@@ -1,0 +1,139 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.nimfa.nimfaapp.LoginActivity">
+
+        <RelativeLayout
+            android:id="@+id/login_top_layer"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/blue_gradient">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/logo_card"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_2x"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                android:focusableInTouchMode="true"
+                app:contentPadding="@dimen/activity_horizontal_margin_half">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="logo"
+                        android:src="@drawable/currency_btc" />
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/sign_in_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_card"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:text="Вход в аккаунт"
+                android:textColor="@color/clearWhite"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_top_layer"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_2x"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_2x"
+            android:layout_marginTop="-100dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:contentPadding="@dimen/activity_horizontal_margin">
+
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/emailAutoComplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/login_chbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="Я подтверждаю, что прочёл и согласен с Условиями пользования Nimfamoney"
+
+                    android:textColor="@color/colorDarkBlue" />
+
+                <CheckBox
+                    android:id="@+id/login_chbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="Я подтверждаю, что прочёл и согласен с Отказом от ответственности Nimfamoney"
+                    android:textColor="@color/colorDarkBlue" />
+
+                <Button
+                    android:id="@+id/email_sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin_half"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/button_rounded_corners"
+                    android:paddingLeft="@dimen/activity_horizontal_margin_2x"
+                    android:paddingRight="@dimen/activity_horizontal_margin_2x"
+                    android:text="@string/action_sign_in_short"
+                    android:textColor="@color/clearWhite"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</layout>
