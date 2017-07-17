@@ -38,6 +38,8 @@ public class GetLoanFragment extends Fragment {
         // Inflate the layout for this fragment
         final FragmentGetLoanBinding binding = DataBindingUtil.inflate(inflater, R.layout.fragment_get_loan, container, false);
 
+        binding.rateTitle.setText(Utils.fromHtml(getString(R.string.at_the_rate_at)));
+
         binding.getLoanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

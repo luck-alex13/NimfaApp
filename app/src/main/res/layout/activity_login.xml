@@ -45,7 +45,7 @@
                 android:layout_below="@+id/logo_card"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="Вход в аккаунт"
+                android:text="@string/sign_in_title"
                 android:textColor="@color/clearWhite"
                 android:textSize="@dimen/text_size_large" />
         </RelativeLayout>
@@ -106,7 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_horizontal_margin"
-                    android:text="Я подтверждаю, что прочёл и согласен с Условиями пользования Nimfamoney"
+                    android:text="@string/agree_terms_of_use_nimfamoney"
 
                     android:textColor="@color/colorDarkBlue" />
 
@@ -115,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_horizontal_margin"
-                    android:text="Я подтверждаю, что прочёл и согласен с Отказом от ответственности Nimfamoney"
+                    android:text="@string/agree_with_the_waiver_of_iability"
                     android:textColor="@color/colorDarkBlue" />
 
                 <Button

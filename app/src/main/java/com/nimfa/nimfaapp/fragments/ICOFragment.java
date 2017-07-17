@@ -1,10 +1,7 @@
 package com.nimfa.nimfaapp.fragments;
 
-import android.content.Context;
 import android.databinding.DataBindingUtil;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
@@ -39,7 +36,7 @@ public class ICOFragment extends Fragment {
         if(MyApp.Instance.getLoanAmoumt() > 0) {
             binding.icoCurrencyError.setVisibility(View.GONE);
             binding.icoRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-            binding.icoRecyclerView.setAdapter(new CurrencyRVAdapter(Utils.generateItems(), (MainActivity) getActivity()));
+            binding.icoRecyclerView.setAdapter(new CurrencyRVAdapter(Utils.generateItems(getContext()), (MainActivity) getActivity()));
         }else
             binding.icoCurrencyError.setVisibility(View.VISIBLE);
         // Inflate the layout for this fragment

@@ -158,20 +158,20 @@ public class Utils {
         return Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
     }
 
-    public static ArrayList<Currency> generateItems() {
+    public static ArrayList<Currency> generateItems(Context context) {
         ArrayList<Currency> currencies = new ArrayList<>();
         ArrayList<Details> bitcoin = new ArrayList<>();
-        bitcoin.add(new Details("Капитализация", "$39,055,604,858 "));
-        bitcoin.add(new Details("Объем торговли в сутки", "$1,590,080,000 "));
-        bitcoin.add(new Details("Токенов в обороте", "16,441,350 BTC"));
-        bitcoin.add(new Details("Общий выпуск", "21,000,000 BTC "));
+        bitcoin.add(new Details(context.getString(R.string.market_cap), "$39,055,604,858 "));
+        bitcoin.add(new Details(context.getString(R.string.volume_24), "$1,590,080,000 "));
+        bitcoin.add(new Details(context.getString(R.string.circulating_supply), "16,441,350 BTC"));
+        bitcoin.add(new Details(context.getString(R.string.max_supply), "21,000,000 BTC "));
         currencies.add(new Currency("Bitcoin", 2610, R.drawable.ic_bitcoin_gold, bitcoin, "https://bitcoin.org/ru/"));
 
         ArrayList<Details> ethereum = new ArrayList<>();
-        ethereum.add(new Details("Капитализация", "$2,409,843,179"));
-        ethereum.add(new Details("Объем торговли в сутки", "$488,334,000"));
-        ethereum.add(new Details("Токенов в обороте", "51,942,432 LTC"));
-        ethereum.add(new Details("Общий выпуск", "84,000,000 LTC"));
+        ethereum.add(new Details(context.getString(R.string.market_cap), "$2,409,843,179"));
+        ethereum.add(new Details(context.getString(R.string.volume_24), "$488,334,000"));
+        ethereum.add(new Details(context.getString(R.string.circulating_supply), "51,942,432 LTC"));
+        ethereum.add(new Details(context.getString(R.string.max_supply), "84,000,000 LTC"));
 
         currencies.add(new Currency("Ethereum", 286, R.drawable.ic_ethereum, ethereum, "https://www.ethereum.org/"));
         currencies.add(new Currency("Ripple", 0.2605f, R.drawable.ic_ripple, ethereum, "https://ripple.com/"));

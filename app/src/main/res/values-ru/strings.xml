@@ -61,4 +61,24 @@
     <string name="empty_bag">Ваш портфель криптовалют пуст</string>
     <string name="error_loan">Заем превышает лимит</string>
     <string name="input_amount">Введите количество</string>
+    <string name="sign_in_title">Вход в аккаунт</string>
+    <string name="your_balance">Ваш баланс:</string>
+    <string name="at_the_rate_at"><![CDATA[<b>1 NIMFA = $5</b> по курсу на 01.09.2017]]></string>
+    <string name="available_to_you_loan">Доступный вам заем:</string>
+    <string name="enter_the_loan_amount">Введите желаемую сумму займа:</string>
+    <string name="amount">Количество</string>
+    <string name="price">Цена</string>
+    <string name="amount_short">Кол-во</string>
+    <string name="value">Стоимость</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="refound_of_loan">Возврат займа</string>
+    <string name="cost_of_crypto_bag">Стоимость Вашего криптовалютного портфеля</string>
+    <string name="comission_10">10% комиссия</string>
+    <string name="net_profit">Чистая прибыль</string>
+    <string name="close_position_and_get_profit">Закрыть позицию и мгновенно получить чистую прибыль</string>
+    <string name="your_net_profit_on_nimfamoney">Ваш чистый доход после закрытия криптовалютной кредитной позиции на Nimfamoney составил</string>
+    <string name="market_cap">Капитализация</string>
+    <string name="volume_24">Объем торговли в сутки</string>
+    <string name="circulating_supply">Токенов в обороте</string>
+    <string name="max_supply">Общий выпуск</string>
 </resources>

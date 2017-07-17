@@ -176,7 +176,7 @@ public enum DialogManager {
         MaterialDialog.Builder builder = new MaterialDialog.Builder(context)
                 .title(title)
                 .inputType(InputType.TYPE_CLASS_NUMBER)
-                .input("Количество", "", false, callback);
+                .input(context.getString(R.string.amount), "", false, callback);
         dialog = builder.build();
         dialog.show();
     }

@@ -25,7 +25,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="Поздравляем вас с прибылью!"
+                    android:text="@string/congratulations_on_your_profit"
                     android:textColor="@color/colorWhite"
                     android:textSize="@dimen/text_size_largest"
 
@@ -53,7 +53,7 @@
                 android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="@dimen/activity_horizontal_margin_2x"
                 android:gravity="center_horizontal"
-                android:text="Ваш чистый доход после закрытия криптовалютной кредитной позиции на Nimfamoney составил"
+                android:text="@string/your_net_profit_on_nimfamoney"
                 android:textColor="@color/colorDarkBlue"
                 android:textSize="@dimen/text_size_medium" />
 

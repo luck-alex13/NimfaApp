@@ -25,7 +25,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_horizontal_margin"
                     android:gravity="center_horizontal"
-                    android:text="Стоимость Вашего криптовалютного портфеля"
+                    android:text="@string/cost_of_crypto_bag"
                     android:textColor="@color/colorWhite"
                     android:textSize="@dimen/text_size_large"
                     android:textStyle="normal" />
@@ -66,7 +66,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Возврат займа"
+                        android:text="@string/refound_of_loan"
                         android:textColor="@color/colorDarkBlue"
                         android:textSize="@dimen/text_size_medium" />
 
@@ -92,7 +92,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10% комиссия"
+                        android:text="@string/comission_10"
                         android:textColor="@color/colorDarkBlue"
                         android:textSize="@dimen/text_size_medium" />
 
@@ -130,7 +130,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Чистая прибыль"
+                    android:text="@string/net_profit"
                     android:textColor="@color/colorDarkBlue"
                     android:textSize="@dimen/text_size_large" />
 
@@ -150,7 +150,7 @@
                 android:id="@+id/get_profit_btn"
                 android:layout_alignParentBottom="true"
                 style="@style/custom_button"
-                android:text="Закрыть позицию и мгновенно получить чистую прибыль"/>
+                android:text="@string/close_position_and_get_profit"/>
 
         </RelativeLayout>
     </LinearLayout>

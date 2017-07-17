@@ -61,4 +61,25 @@
     <string name="empty_bag">YOUR CRYPTOCURRENCY PORTFOLIO IS EMPTY</string>
     <string name="error_loan">NOT ENOUGH FUNDS :(</string>
     <string name="input_amount">TYPE THE AMOUNT</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="your_balance">Your balance:</string>
+    <string name="at_the_rate_at"><![CDATA[<b>1 NIMFA = $5</b> at the rate as of 01.09.2017]]></string>
+    <string name="available_to_you_loan">Available to you loan:</string>
+    <string name="enter_the_loan_amount">Enter the loan amount:</string>
+    <string name="amount">Amount</string>
+    <string name="price">Price</string>
+    <string name="amount_short">Amount</string>
+    <string name="value">Value</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="congratulations_on_your_profit">Congratulations on your profit!</string>
+    <string name="refound_of_loan">Refund of loan</string>
+    <string name="cost_of_crypto_bag">The cost of your crypto-currency portfolio</string>
+    <string name="comission_10">10% commission</string>
+    <string name="net_profit">Net profit</string>
+    <string name="close_position_and_get_profit">Close the position and get net profit</string>
+    <string name="your_net_profit_on_nimfamoney">Your net income after the closure of crypto-credit on Nimfamoney is</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="volume_24">Volume (24h)</string>
+    <string name="circulating_supply">Circulating supply</string>
+    <string name="max_supply">Max supply</string>
 </resources>

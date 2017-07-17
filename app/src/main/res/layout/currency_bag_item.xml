@@ -64,7 +64,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/activity_horizontal_margin_fourth"
-                            android:text="Цена" />
+                            android:text="@string/price" />
 
 
                         <TextView
@@ -88,7 +88,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/activity_horizontal_margin_fourth"
-                            android:text="Кол-во" />
+                            android:text="@string/amount_short" />
 
 
                         <TextView
@@ -114,7 +114,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/activity_horizontal_margin_fourth"
-                            android:text="Стоимость" />
+                            android:text="@string/value" />
 
 
                         <TextView
@@ -123,7 +123,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+
                             android:text="@{String.format(@string/dollar_f, curr.cost * curr.amount)}"
                             android:textColor="@color/colorDarkBlue"
                             android:textSize="@dimen/text_size_medium" />

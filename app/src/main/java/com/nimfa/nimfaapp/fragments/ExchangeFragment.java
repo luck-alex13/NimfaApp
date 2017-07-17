@@ -40,7 +40,7 @@ public class ExchangeFragment extends Fragment {
         FragmentExchangeBinding binding = DataBindingUtil.inflate(inflater, R.layout.fragment_exchange, container, false);
         if(MyApp.Instance.getLoanAmoumt() > 0) {
             binding.cryptoCurrencyList.setLayoutManager(new LinearLayoutManager(getContext()));
-            binding.cryptoCurrencyList.setAdapter(new CurrencyRVAdapter(Utils.generateItems(), (MainActivity) getActivity()));
+            binding.cryptoCurrencyList.setAdapter(new CurrencyRVAdapter(Utils.generateItems(getContext()), (MainActivity) getActivity()));
             binding.cryptoCurrencyError.setVisibility(View.GONE);
         }else
             binding.cryptoCurrencyError.setVisibility(View.VISIBLE);
