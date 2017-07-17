@@ -1,64 +1,64 @@
 <resources>
-    <string name="app_name">NimfaApp</string>
+    <string name="app_name">Nimfamoney</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Пароль</string>
-    <string name="action_sign_in">Войдите или зарегистрируйтесь</string>
-    <string name="action_sign_in_short">Войти</string>
-    <string name="error_invalid_email">Некорректный email</string>
-    <string name="error_invalid_password">Слишком короткий пароль</string>
-    <string name="error_incorrect_password">Некорректный пароль</string>
-    <string name="error_field_required">Это поле обязательно к заполнению</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login or Sign Up</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">Oops! Invalid Email!</string>
+    <string name="error_invalid_password">Ooops! Invalid Password!</string>
+    <string name="error_incorrect_password">Ooops! Invalid Password!</string>
+    <string name="error_field_required">Type here!</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="horosho">Хорошо</string>
+    <string name="horosho">OKAY</string>
     <string name="ok">OK</string>
-    <string name="action_cancel">Отмена</string>
-    <string name="all_rigth">Все верно</string>
-    <string name="please_wait">Пожалуйста подождите</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="all_rigth">OKAY</string>
+    <string name="please_wait">Please wait</string>
     <string name="title_activity_main">MainActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="get_loan">Получить заем</string>
-    <string name="my_portfolio">Мой портфель</string>
-    <string name="exchange">Биржа</string>
+    <string name="get_loan">GET CRYPTOLOAN</string>
+    <string name="my_portfolio">MY PORTFOLIO</string>
+    <string name="exchange">EXCHANGE</string>
     <string name="ico">ICO</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="prompt_summ_loan">Сумма займа</string>
-    <string name="action_get_loan">Получить заем</string>
+    <string name="prompt_summ_loan">CRYPTOLOAN AMMOUNT</string>
+    <string name="action_get_loan">GET CRYPTOLOAN</string>
 
-    <string name="credit_text"><![CDATA[Чтобы открыть позицию на <b>%d NIMFA</b> и начать покупать на заемные
-        токены криптовалюту или участвовать в ICO, переведите <b>3,3%%</b> от суммы займа на кредитный фонд]]></string>
+    <string name="credit_text"><![CDATA[To get <b>%d NIMFA</b> and start investing
+        on exchanges or ICOs, transfer <b>3,3%%</b> of your cryptoloan to cryptocredit fund]]></string>
     <string name="credit_formula">3.3%% = %1$d NIMFA = $ %2$d </string>
-    <string name="action_transfer_and_get_loan">Перевести и получить заем</string>
-    <string name="change_action_fragment_text"><![CDATA[Вам открыта криптовалютная кредитная позиция на сумму
-        <b>%d токенов NIMFA</b> для торговли на биржах и для покупки выгодных токенов на ICO]]></string>
-    <string name="buy_token_ico">Купить токены на ICO</string>
-    <string name="agree_terms_of_use_nimfamoney">Я подтверждаю, что прочёл и согласен с Условиями пользования Nimfamoney</string>
-    <string name="begin_trade">Начать торговлю на биржах</string>
-    <string name="agree_with_the_waiver_of_iability">Я подтверждаю, что прочёл и согласен с Отказом от ответственности Nimfamoney</string>
+    <string name="action_transfer_and_get_loan">TRANSFER AND GET CRYPTOLOAN</string>
+    <string name="change_action_fragment_text"><![CDATA[Congratulations! Now your funds:
+        <b>%d NIMFA tokens</b> are able for you to start investing!]]></string>
+    <string name="buy_token_ico">BUY TOKENS ON ICO</string>
+    <string name="agree_terms_of_use_nimfamoney">Check here to confirm that you have read, understand and agree to the Nimfamoney\'s Terms of Use.</string>
+    <string name="begin_trade">START INVESTING</string>
+    <string name="agree_with_the_waiver_of_iability">Check here to confirm that you have read, understand and agree to the Nimfamoney\'s Denial of Responsibility</string>
     <string name="dollar_s">$ %s</string>
     <string name="dollar_f">$ %.2f</string>
-    <string name="action_bye">Купить</string>
-    <string name="bye_tokens_from_list">Купите токены из списка</string>
-    <string name="bye_currency_from_list">Купите криптовалюту из списка</string>
-    <string name="details">Детали</string>
-    <string name="help">Справка</string>
-    <string name="close_position">Закрыть позицию</string>
-    <string name="my_portfolio_crypto">Мой портфель криптовалют</string>
-    <string name="cost_bag">Стоимость портфеля</string>
-    <string name="pay_out">Перевести на свой кошелек</string>
-    <string name="error">Ошибка</string>
-    <string name="invalid_apk">Истек период действия apk.</string>
-    <string name="no_loan_error">Для того чтобы совершать сделки, вам необходимо получить заем</string>
-    <string name="empty_bag">Ваш портфель криптовалют пуст</string>
-    <string name="error_loan">Заем превышает лимит</string>
-    <string name="input_amount">Введите количество</string>
+    <string name="action_bye">BUY NOW</string>
+    <string name="bye_tokens_from_list">BUY TOKENS FROM THE LIST</string>
+    <string name="bye_currency_from_list">BUYT CRYPTOCYRRENCY FROM THE LIST</string>
+    <string name="details">DETAILS</string>
+    <string name="help">HELP</string>
+    <string name="close_position">CLOSE THE POSITION</string>
+    <string name="my_portfolio_crypto">MY CRYPTOCURRENCY PORTFOLIO</string>
+    <string name="cost_bag">PORTFOLIO VALUE</string>
+    <string name="pay_out">TRANSFER TO YOUR WALLET</string>
+    <string name="error">ERROR</string>
+    <string name="invalid_apk">Invalid apk.</string>
+    <string name="no_loan_error">YOU HAVE NOT RECEIVED A CRYPTOLOAN YET. LET\'S DO IT NOW!</string>
+    <string name="empty_bag">YOUR CRYPTOCURRENCY PORTFOLIO IS EMPTY</string>
+    <string name="error_loan">NOT ENOUGH FUNDS :(</string>
+    <string name="input_amount">TYPE THE AMOUNT</string>
 </resources>
